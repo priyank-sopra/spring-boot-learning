@@ -37,6 +37,17 @@ public class Employees {
 	@Column(name = "COMMISSION_PCT")
 	BigDecimal commissionPct;
 
+	@Column(name = "DEPARTMENT_ID")
+	Long departmentId;
+	
+	public Long getDepartmentId() {
+		return departmentId;
+	}
+
+	public void setDepartmentId(Long departmentId) {
+		this.departmentId = departmentId;
+	}
+
 	public Long getEmployeeId() {
 		return employeeId;
 	}
